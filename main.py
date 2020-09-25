@@ -5,10 +5,10 @@ import lib
 import re
 import subprocess
 
-with open('cookie.json') as f:
+with open('/home/an_fenix/pythonProjects/skillshare_download/cookie.json') as f:
     s_ = f.read()
     j_ = json.loads(s_).popitem()[1].popitem()[1]
-    headers = {i['name']: i['value'] for i in j_}
+    main_headers = {i['name']: i['value'] for i in j_}
 
 
 class Course:
@@ -62,16 +62,18 @@ class Manager:
         self.session = session
 
     def ffmpeg(self, m3u8_link, filename):
-        s = f'ffmpeg -protocol_whitelist "file,http,https,tcp,tls" -i "{m3u8_link}" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 50 {filename}'
-        os.system(s)
-        # subprocess.Popen(s)
+        s = f'ffmpeg -y -protocol_whitelist "file,http,https,tcp,tls" -i "{m3u8_link}" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 50 {filename}'
+        # os.system(s)
+        subprocess.Popen(s)
 
     def download_mp4(self, video_id, filename):
         link = f"https://edge.api.brightcove.com/playback/v1/accounts/{self.account_id}/videos/{video_id}"
+
         headers = {
             'Accept': "application/json;pk=BCpkADawqM2OOcM6njnM7hf9EaK6lIFlqiXB0iWjqGWUQjU7R8965xUvIQNqdQbnDTLz0IAO7E6Ir2rIbXJtFdzrGtitoee0n1XXRliD-RH9A-svuvNW9qgo3Bh34HEZjXjG4Nml4iyz3KqF",
             'User-Agent': self.user_agent_val
                    }
+
         self.session.headers.update(headers)
         res = self.session.get(link).json()
 
@@ -90,7 +92,10 @@ class Manager:
 
     def download_courses(self, links):
         for link in links:
-            content = self.session.get(link).text
+            session = requests.Session()
+            headers = main_headers
+            session.headers.update(headers)
+            content = session.get(link + '?via=custom-lists').text
             soup = lib.soup(content)
             self.download_lessons(soup)
 
