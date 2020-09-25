@@ -23,6 +23,78 @@ def soup(content='', headers=None):
     return None
 
 
+def read_file(filename, TYPE=True, errors='ignore', **kwargs):
+    """
+    read file with kwargs:
+    Defult TYPE = extpath of file
+
+    TYPE variants:
+        pkl: pickle.load(f)
+        yaml: yaml.load(f)
+        json: json.load(f)
+        None or another: f.read()
+
+    additional args:
+    mode = 'r' - mode kwarg of open func
+        byte mode auto set encoding=None
+    encoding = 'utf-8' - encoding kwarg of open func.
+
+    """
+
+    mode = kwargs.get('mode', 'r')
+    encoding = kwargs.get('encoding', 'utf-8') if 'b' not in mode else None
+
+    if TYPE and isinstance(TYPE, bool):
+        TYPE = os.path.splitext(filename)[-1][1:]
+    try:
+        if TYPE == 'pkl':
+            with open(filename, 'rb') as f:
+                return pickle.load(f)
+
+        with open(filename, mode=mode, encoding=encoding) as f:
+            if TYPE == 'yaml':
+                return yaml.safe_load(f)
+            elif TYPE == "json":
+                return json.loads(f.read())
+            # elif TYPE == 'csv':
+            #     return list(csv.reader(f, **kwargs))
+            else:
+                return f.read()
+
+    except Exception as e:
+        logger.error(traceback.format_exc())
+        if errors != 'ignore':
+            raise e
+
+
+def write_file(filename, input, mode=None):
+    try:
+        if not mode:
+            with open(filename, 'w') as f:
+                f.write(input)
+
+        elif mode == 'wb' or isinstance(input, bytes):
+            with open(filename, 'wb') as f:
+                f.write(input)
+
+        elif mode == 'pkl':
+            with open(filename, 'wb') as f:
+                pickle.dump(input, f)
+
+        else:
+            with open(filename, 'w') as f:
+                if mode == 'json':
+                    f.write(jdumps(input))
+                elif mode == 'yaml':
+                    f.write(ydumps(input))
+                else:
+                    f.write(input)
+        return True
+    except Exception as e:
+        return str(e)
+
+
+
 @contextmanager
 def catch_exceptions(*exceptions, message=None):
     """
