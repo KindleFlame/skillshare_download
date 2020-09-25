@@ -1,0 +1,42 @@
+{
+  "Заголовки запроса (582 б)": {
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json;pk=BCpkADawqM2OOcM6njnM7hf9EaK6lIFlqiXB0iWjqGWUQjU7R8965xUvIQNqdQbnDTLz0IAO7E6Ir2rIbXJtFdzrGtitoee0n1XXRliD-RH9A-svuvNW9qgo3Bh34HEZjXjG4Nml4iyz3KqF"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3"
+      },
+      {
+        "name": "Cache-Control",
+        "value": "max-age=0"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "Host",
+        "value": "edge.api.brightcove.com"
+      },
+      {
+        "name": "Origin",
+        "value": "https://www.skillshare.com"
+      },
+      {
+        "name": "Referer",
+        "value": "https://www.skillshare.com/"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0) Gecko/20100101 Firefox/80.0"
+      }
+    ]
+  }
+}
