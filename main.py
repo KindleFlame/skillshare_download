@@ -1,11 +1,11 @@
 import requests
 import json
 import os
-import lib
+import lib as fs
 import re
 import subprocess
 
-with open('/home/an_fenix/pythonProjects/skillshare_download/cookie.json') as f:
+with open('cookie.json') as f:
     s_ = f.read()
     j_ = json.loads(s_).popitem()[1].popitem()[1]
     main_headers = {i['name']: i['value'] for i in j_}
@@ -62,9 +62,9 @@ class Manager:
         self.session = session
 
     def ffmpeg(self, m3u8_link, filename):
-        s = f'ffmpeg -y -protocol_whitelist "file,http,https,tcp,tls" -i "{m3u8_link}" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 50 {filename}'
-        # os.system(s)
-        subprocess.Popen(s)
+        s = f'ffmpeg -protocol_whitelist "file,http,https,tcp,tls" -i "{m3u8_link}" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 50 {filename}'
+        os.system(s)
+        # subprocess.Popen(s)
 
     def download_mp4(self, video_id, filename):
         link = f"https://edge.api.brightcove.com/playback/v1/accounts/{self.account_id}/videos/{video_id}"
@@ -96,12 +96,14 @@ class Manager:
             headers = main_headers
             session.headers.update(headers)
             content = session.get(link + '?via=custom-lists').text
-            soup = lib.soup(content)
+            soup = fs.soup(content)
             self.download_lessons(soup)
 
 
 if __name__ == '__main__':
     account_id = '3695997568001'
     m = Manager(account_id)
-    links = ['https://www.skillshare.com/classes/Cinema-4D-Creating-Procedured-Ornament-2D-and-3D-with-no-plugin/434176040']
+    # links = ['https://www.skillshare.com/classes/Cinema-4D-Creating-Procedured-Ornament-2D-and-3D-with-no-plugin/434176040']
+    with open('Download_SkillShare.txt') as f:
+        links = f.read().split('\n')
     m.download_courses(links)

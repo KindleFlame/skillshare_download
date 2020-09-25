@@ -1,3 +1,4 @@
+import os
 import requests
 from contextlib import contextmanager
 from bs4 import BeautifulSoup as _BeautifulSoup
