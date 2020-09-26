@@ -2,7 +2,7 @@ import os
 import requests
 from contextlib import contextmanager
 from bs4 import BeautifulSoup as _BeautifulSoup
-
+import traceback
 
 def url_get(url, proxies=False, headers=None):
 
@@ -63,7 +63,7 @@ def read_file(filename, TYPE=True, errors='ignore', **kwargs):
                 return f.read()
 
     except Exception as e:
-        logger.error(traceback.format_exc())
+        print(traceback.format_exc())
         if errors != 'ignore':
             raise e
 
@@ -127,7 +127,7 @@ def catch_exceptions(*exceptions, message=None):
                 message = 'MANAGER CATCH '
 
             if message:
-                logger.error(message + f'Exception: {repr(e)} \n traceback: {traceback.format_exc()}')
+                print(message + f'Exception: {repr(e)} \n traceback: {traceback.format_exc()}')
         except Exception as e:
             pass
 

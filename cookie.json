@@ -1,5 +1,5 @@
 {
-  "Заголовки запроса (2,709 КБ)": {
+  "Заголовки запроса (2,722 КБ)": {
     "headers": [
       {
         "name": "Accept",
@@ -19,7 +19,7 @@
       },
       {
         "name": "Cookie",
-        "value": "__cfduid=d916a58418d94069fb2f5e7632070fa3b1601045908; PHPSESSID=5c07a064e6a88579ed04c58a74515c65; device_session_id=304c8262-d757-4711-8697-c4d3a2dc1d42; show-like-copy=0; YII_CSRF_TOKEN=alQ1RlJGelpzN1JMRnpLZnFDcFE2RURVbkpFdDRwZkh5c0Sjro7muOTh5IZBCR4as2B_OfAOSx263m_I2S-aDA%3D%3D; visitor_tracking=utm_campaign%3D%26utm_source%3D%28direct%29%26utm_medium%3D%28none%29%26referrer%3D%26referring_username%3D; first_landing=utm_campaign%3D%26utm_source%3D%28direct%29%26utm_medium%3D%28none%29%26referrer%3D%26referring_username%3D; _gcl_au=1.1.1576608558.1601045910; _pin_unauth=dWlkPU5UWTBOakpsTURrdFlXRm1aUzAwTWpFMkxUZzBZV010Wm1SalpqVXhPR1F6TXpnNSZycD1abUZzYzJV; __pdst=ec90a3d174c744298ab5fadc6b55a9cc; IR_gbd=skillshare.com; IR_4650=1601066244097%7C0%7C1601066073490%7C%7C; sm_uuid=1601046773184; __utma=99704988.465057504.1601045912.1601063817.1601066074.6; __utmc=99704988; __utmz=99704988.1601045912.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmv=99704988.|1=visitor-type=user=1; __qca=P0-1482361887-1601045912300; _scid=5af245b3-2a89-48f1-b7b2-082336d47c2b; __ssid=6687d8feb3f0b04081d219e1c573f82; CAPTIONS=off; __stripe_mid=f11f924c-5516-437a-af01-2973f0623df396c45d; _sctr=1|1600981200000; ss_hide_site_banner=1601045919.953; G_ENABLED_IDPS=google; IR_PI=ab55c972-ff3f-11ea-bf6d-0295e3e6ea6a%7C1601152644097; ss_hide_default_banner=1601050557.675; _ga=GA1.2.465057504.1601045912; _gid=GA1.2.404513144.1601060244; __cf_bm=7f4a7acf4d9102d48abbafd2c83ba5d8d4a14cab-1601066073-1800-AXfw6JBn+bul4abZWNsVO/YhphibBu5SV16HCgLxzE8HWDElQWZ8/IXF1MEoAbXEgv+zsDfth/iiC2xU8jMqIcds+mcZdmMuaZR7QHfrpJFywNXWuDnDSSx9EFI/Z7d9B23spMGNXaKOKtkIE8h+8H/gUXQguIFfmUIQqow+81cGUAJm6d3xjyAjy2q0+bwFyA==; __utmb=99704988.5.10.1601066074; __utmt=1; __stripe_sid=6d50640d-7ee7-470b-b032-2249c18461b84b2dce; skillshare_user_=fad0706ea2d7a34d14089130436c9c9fcb048416a%3A4%3A%7Bi%3A0%3Bs%3A8%3A%2215675016%22%3Bi%3A1%3Bs%3A24%3A%22shelestova.des%40gmail.com%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A8%3A%2215066415%22%3Bs%3A10%3A%22login_time%22%3Bs%3A19%3A%222020-09-25%2020%3A34%3A36%22%3B%7D%7D; _uetsid=16194b8466bcd69b6f5929e79f64aed8; _uetvid=ac88edfe975e9c0577478295af5395f9"
+        "value": "__cfduid=d916a58418d94069fb2f5e7632070fa3b1601045908; device_session_id=304c8262-d757-4711-8697-c4d3a2dc1d42; show-like-copy=0; visitor_tracking=utm_campaign%3D%26utm_source%3D%28direct%29%26utm_medium%3D%28none%29%26referrer%3D%26referring_username%3D; first_landing=utm_campaign%3D%26utm_source%3D%28direct%29%26utm_medium%3D%28none%29%26referrer%3D%26referring_username%3D; _gcl_au=1.1.1576608558.1601045910; _pin_unauth=dWlkPU5UWTBOakpsTURrdFlXRm1aUzAwTWpFMkxUZzBZV010Wm1SalpqVXhPR1F6TXpnNSZycD1abUZzYzJV; __pdst=ec90a3d174c744298ab5fadc6b55a9cc; sm_uuid=1601046773184; __utma=99704988.465057504.1601045912.1601066074.1601107192.7; __utmz=99704988.1601045912.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmv=99704988.|1=visitor-type=user=1; __qca=P0-1482361887-1601045912300; _scid=5af245b3-2a89-48f1-b7b2-082336d47c2b; __ssid=6687d8feb3f0b04081d219e1c573f82; __stripe_mid=f11f924c-5516-437a-af01-2973f0623df396c45d; _sctr=1|1600981200000; ss_hide_site_banner=1601045919.953; G_ENABLED_IDPS=google; IR_PI=ab55c972-ff3f-11ea-bf6d-0295e3e6ea6a%7C1601193604020; ss_hide_default_banner=1601050557.675; _ga=GA1.2.465057504.1601045912; _gid=GA1.2.404513144.1601060244; skillshare_user_=e56f75dbf0834d3034c5fcfd894916b220125793a%3A4%3A%7Bi%3A0%3Bs%3A8%3A%2215675016%22%3Bi%3A1%3Bs%3A24%3A%22shelestova.des%40gmail.com%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22username%22%3Bs%3A8%3A%2215066415%22%3Bs%3A10%3A%22login_time%22%3Bs%3A19%3A%222020-09-26%2007%3A59%3A47%22%3B%7D%7D; PHPSESSID=83704eebf0688f2b37845ba108e80b3e; YII_CSRF_TOKEN=emM2bjA5V3d6eE4xTjlLd0duMU5BU2VPVWk4NUp3MVj13aV4MTcnCv01QFOfIiWXdP68trhfdJ1aZ17cZ3qgYQ%3D%3D; __cf_bm=e55f460ef35a5acd6d232ae85c631f777acc58ef-1601107189-1800-AQ3HUxwyGIHWj8dZAh3t4AWrRtB/dfxo+ozIFK0Cap8Y90NeNttzVfWte7Dw19XeoYxiovzVO6Gg9/XQNBcDB1H7jCiJPvzpScFrakxbmqHX7c6fXGvd+anx6T4KyhabtGFYupxCUOvLOJy/+Wq8yHUXc8DBQ96WiYoB3A9q9t8QlUEOSRyPSA37Xo5OOFdwpg==; IR_gbd=skillshare.com; IR_4650=1601107204020%7C0%7C1601107189885%7C%7C; CAPTIONS=off; __stripe_sid=ae0fb7e4-28c8-4332-b9ad-6b28524e3e9e2486f5; __utmb=99704988.3.10.1601107192; __utmc=99704988; __utmt=1; _uetsid=16194b8466bcd69b6f5929e79f64aed8; _uetvid=ac88edfe975e9c0577478295af5395f9"
       },
       {
         "name": "Host",
@@ -27,7 +27,11 @@
       },
       {
         "name": "Referer",
-        "value": "https://www.skillshare.com/lists/saved-classes?via=header-profile"
+        "value": "https://www.skillshare.com/lists/saved-classes?via=header"
+      },
+      {
+        "name": "TE",
+        "value": "Trailers"
       },
       {
         "name": "Upgrade-Insecure-Requests",

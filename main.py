@@ -86,9 +86,10 @@ class Manager:
         dirname = os.path.join(self.basepath, clear(course.name))
         os.makedirs(dirname, exist_ok=True)
 
-        for name, video_id in course.lessons:
-            filename = os.path.join(dirname, clear(name) + '.mp4')
-            self.download_mp4(video_id, filename)
+        with fs.catch_exceptions():
+            for name, video_id in course.lessons:
+                filename = os.path.join(dirname, clear(name) + '.mp4')
+                self.download_mp4(video_id, filename)
 
     def download_courses(self, links):
         for link in links:
