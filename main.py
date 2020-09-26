@@ -92,6 +92,7 @@ class Manager:
 
     def download_courses(self, links):
         for link in links:
+            print(link)
             session = requests.Session()
             headers = main_headers
             session.headers.update(headers)
